@@ -19,14 +19,16 @@
 	margin-right: 20px !important;
 }
 
-.profile-img {
+.profile-img a {
+    padding-top: 0px !important;
+}
+
+.profile-img img {
     max-width: 60px !important;
-    margin-top: 28px;
 }
 
 .navbar-menu {
 	margin-top: 35px;
-	margin-right: 50px !important; 
 }
 
 .navbar-menu .active a{
