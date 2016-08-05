@@ -24,7 +24,6 @@ export const FormLogin = () => {
 					<SimpleInput label="el código token" type="password"></SimpleInput>
 				</div>									
 				<div className="col-md-6 col-lg-6">
-					<br/>
 					<Button bsStyle="primary" className="hidden-sm hidden-xs" onClick={ handleClick }>ENTRAR</Button>
 					<Button bsStyle="primary" bsSize="large" block className="hidden-md hidden-lg" onClick={ handleClick }>ENTRAR</Button>
 				</div>
