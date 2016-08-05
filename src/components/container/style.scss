@@ -1,0 +1,35 @@
+.navbar-container {
+	height: 110px;
+}
+
+.navbar-container a {
+    color: #FFF !important;
+    text-decoration: none;
+}
+
+.navbar-container p {
+    color: #FFF !important;
+}
+
+.navbar-container i {
+    color: #FFF !important;
+}
+
+.navbar-container .row {
+	margin-right: 20px !important;
+}
+
+.profile-img {
+    max-width: 60px !important;
+    margin-top: 28px;
+}
+
+.navbar-menu {
+	margin-top: 35px;
+	margin-right: 50px !important; 
+}
+
+.navbar-menu .active a{
+    color: #fff;
+    background-color: $brand-secundary !important;
+}

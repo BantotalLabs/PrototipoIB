@@ -12,3 +12,6 @@ npm-debug.log
 
 # Sass cache compilation
 .sass-cache
+
+# CSS auto-generated
+src/css

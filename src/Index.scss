@@ -1,5 +1,23 @@
+/* SETTINGS BOOTSTRAP-SASS */
+@import "./_settings.scss";
+
+/* DEPENDENCIES */
+@import url(https://fonts.googleapis.com/css?family=Oxygen:400,700,300);
+@import "../node_modules/bootstrap-sass/assets/stylesheets/bootstrap";
+@import "../node_modules/font-awesome/scss/font-awesome";
+
+/* COMPONENTS STYLES */
+@import "./components/login/style.scss";
+@import "./components/navLogo/style.scss";
+@import "./components/container/style.scss";
+
 body {
   margin: 0;
   padding: 0;
   font-family: sans-serif;
+}
+
+.navbar-dropdown ul li a {
+    color: $brand-primary !important;
+    text-decoration: none;
 }

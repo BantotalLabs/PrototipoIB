@@ -1,9 +1,6 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-import App from './App';
-import './css/Index.css'; 
+import React from 'react'
+import Root from './components/root'
+import './css/Index.css' 
 
-ReactDOM.render(
-  <App />,
-  document.getElementById('root')
-);
+export const Index = () => 
+	<Root />
