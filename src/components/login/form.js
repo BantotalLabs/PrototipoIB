@@ -1,8 +1,10 @@
 import React from 'react'
-import { Button, FormGroup, FormControl } from 'react-bootstrap'
+import { Button, FormGroup } from 'react-bootstrap'
 import { hashHistory } from 'react-router'
 
-export const Form = () => {
+import { SimpleInput } from '../atoms'
+
+export const FormLogin = () => {
 
 	const handleClick = (event) => {
 		hashHistory.push('/home/')
@@ -13,19 +15,13 @@ export const Form = () => {
 			<FormGroup controlId="login">
 				<h3>HOLA DE NUEVO!</h3>
 				<div className="col-md-6 col-lg-6">
-					<small><strong>tu número de tarjeta</strong></small>
-					<FormControl type="email" placeholder="" />
-					<FormControl.Feedback />
+					<SimpleInput label="tu número de tarjeta" type="text"></SimpleInput>
 				</div>
 				<div className="col-md-6 col-lg-6">
-					<small><strong>tu contraseña</strong></small>
-					<FormControl type="password" placeholder="" />
-					<FormControl.Feedback />
+					<SimpleInput label="tu contraseña" type="password"></SimpleInput>
 				</div>
 				<div className="col-md-6 col-lg-6">
-					<small><strong>el código token</strong></small>
-					<FormControl type="password" placeholder="" />
-					<FormControl.Feedback />
+					<SimpleInput label="el código token" type="password"></SimpleInput>
 				</div>									
 				<div className="col-md-6 col-lg-6">
 					<br/>

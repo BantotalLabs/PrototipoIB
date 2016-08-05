@@ -2,7 +2,7 @@ import React from 'react'
 
 import { NavLogin } from './nav.js';
 import { Advertising } from './advertising.js';
-import { Form } from './form.js';
+import { FormLogin } from './form.js';
 
 export const Login = () => 
 	<div>
@@ -11,7 +11,7 @@ export const Login = () =>
 			<div className="row container-login">
 				<Advertising /> 
 				<div className="col-md-6 col-lg-6">
-					<Form />
+					<FormLogin />
 				</div>
 			</div>
 		</div>
