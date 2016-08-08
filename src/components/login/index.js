@@ -1,16 +1,14 @@
 import React from 'react'
 
-import { NavLogin } from './nav.js';
-import { Advertising } from './advertising.js';
-import { FormLogin } from './form.js';
+import { NavLogin } from './nav.js'
+import { FormLogin } from './form.js'
 
 export const Login = () => 
 	<div>
 		<NavLogin />
 		<div className="container">
 			<div className="row container-login">
-				<Advertising /> 
-				<div className="col-md-6 col-lg-6">
+				<div className="col-lg-offset-4 col-md-offset-4 col-lg-4 col-md-4">
 					<FormLogin />
 				</div>
 			</div>

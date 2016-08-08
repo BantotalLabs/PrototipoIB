@@ -14,19 +14,15 @@ export const FormLogin = () => {
 		<form>
 			<FormGroup controlId="login">
 				<h3>HOLA DE NUEVO!</h3>
-				<div className="col-md-6 col-lg-6">
-					<SimpleInput label="tu número de tarjeta" type="text"></SimpleInput>
-				</div>
-				<div className="col-md-6 col-lg-6">
-					<SimpleInput label="tu contraseña" type="password"></SimpleInput>
-				</div>
-				<div className="col-md-6 col-lg-6">
-					<SimpleInput label="el código token" type="password"></SimpleInput>
-				</div>									
-				<div className="col-md-6 col-lg-6">
-					<Button bsStyle="primary" className="hidden-sm hidden-xs" onClick={ handleClick }>ENTRAR</Button>
-					<Button bsStyle="primary" bsSize="large" block className="hidden-md hidden-lg" onClick={ handleClick }>ENTRAR</Button>
-				</div>
+
+					<SimpleInput className="input-login" label="tu número de tarjeta" type="text" placeholder="XXXXXXXXX"></SimpleInput>
+
+					<SimpleInput className="input-login" label="tu contraseña" type="password" placeholder="·····"></SimpleInput>
+
+					<SimpleInput className="input-login" label="el código token" type="password" placeholder="·····"></SimpleInput>
+							
+					<Button bsStyle="success" bsSize="large" block onClick={ handleClick }>ENTRAR</Button>
+
 			</FormGroup>
 		</form>
 	)

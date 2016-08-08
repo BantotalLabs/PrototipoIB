@@ -1,18 +1,30 @@
 .navbar-login {
-	height: 110px;
+	height: 120px;
 }
 
 .navbar-login a {
-    color: #FFF !important;
+    color: #000 !important;
     text-decoration: none;
 }
 
 .navbar-login p {
-    color: #FFF !important;
+    color: #000 !important;
 }
 
-.navbar-login i {
-    color: #FFF !important;
+.navbar-login .fb {
+    color: #4267b2 !important;
+}
+
+.navbar-login .tw {
+    color: #1da1f2 !important;
+}
+
+.navbar-login .ld {
+    color: #006fa6 !important;
+}
+
+.navbar-login .yt{
+    color: #cc181e !important;
 }
 
 .navbar-login .row {
@@ -25,4 +37,8 @@
 
 .container-login button {
     margin-top: 18px;
+}
+
+.input-login {
+	margin-bottom: 20px;
 }
