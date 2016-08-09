@@ -1,0 +1,72 @@
+$yellow: #f8ab31;
+
+.resume-container {
+	margin-top: 3%;
+}
+
+.resume-container .current-balance {
+	background-color: $brand-success;
+	height: 215px;
+	color: $gray-lighter;
+	padding: 25px;
+    border-radius: 2px;
+    margin-right: 15px;
+    margin-left: 15px;
+}
+
+.resume-container .balance {
+	font-size: 60px;
+}
+
+.resume-container .balance-decimal {
+	font-size: 15px !important;
+}
+
+.resume-container .balance-yesterday {
+	color: $yellow !important;
+}
+
+.resume-container .credit-icon-mov {
+	color: #93c12e;
+	font-size: 13px;
+}
+
+.resume-container .debit-icon-mov {
+	color: #ea685f;
+	font-size: 13px;
+}
+
+.resume-container .numbers {
+	margin-top: 25px;
+	padding: 25px;
+	background-color: $gray-lighter;
+}
+
+.resume-container .numbers .credit-debit {
+	margin-top: 45px;
+}
+
+.resume-container .numbers .credit-icon {
+	color: #93c12e;
+	margin-right: 10px;
+	font-size: 35px;
+}
+
+.resume-container .numbers .credit-value {
+	font-size: 35px;
+}
+
+.resume-container .numbers .debit-value {
+	font-size: 35px;
+}
+
+.resume-container .numbers .debit-icon {
+	color: #ea685f;
+	margin-right: 10px;
+	font-size: 35px;
+}
+
+.resume-container .month {
+	padding: 25px;
+	color: $brand-success;
+}
