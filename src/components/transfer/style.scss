@@ -1,0 +1,38 @@
+$celeste: #0079a1;
+$amarillo: #f8ab31;
+
+.transfer-container .current-balance {
+	background-color: $celeste;
+	height: 140px;
+	color: white;
+	padding: 10px;
+	padding-right: 25px;
+    border-radius: 2px;
+    margin-right: 15px;
+    margin-left: 15px;
+	margin-top: 25px;
+}
+
+.transfer-container .balance {
+	font-size: 35px;
+}
+
+.transfer-container .balance-decimal {
+	font-size: 15px !important;
+}
+
+.transfer-container .balance-yesterday {
+	color: $amarillo !important;
+}
+
+.transfer-container .btn-transfer {
+	margin-top: 35px;
+}
+
+.transfer-container .frequent {
+	margin-top: 20px;
+}
+
+.transfer-container .frequent button {
+	color: $amarillo !important;
+}
