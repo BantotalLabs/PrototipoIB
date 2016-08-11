@@ -3,12 +3,12 @@ import { Form, Button, FormGroup, FormControl, ControlLabel } from 'react-bootst
 
 import { GenericInput } from '../atoms'
 
-export const FormTransfer = () => 
+export const FormTransfer = ({ changeAmount }) => 
 	<div>
 		<Form>
 			<FormGroup controlId="login">
 				<GenericInput label="MOTIVO DE LA TRANSFERENCIA" placeholder="" type="text" />
-				<GenericInput label="CUANTO DINERO" placeholder="0.00" type="number" />
+				<GenericInput label="CUANTO DINERO" placeholder="0.00" type="number" onChange={ e => changeAmount(e) } />
 
 				<ControlLabel className="label-generic-input">CUENTA DE DÉBITO</ControlLabel>
 				<FormControl componentClass="select" placeholder="select">
@@ -17,7 +17,7 @@ export const FormTransfer = () =>
 					<option value="CA">CAJA DE AHORRO 120000124-1</option>
 				</FormControl>
 
-				<ControlLabel className="label-generic-input">CUENTA DE CRÉDITO</ControlLabel>
+				<ControlLabel className="label-generic-input">CUENTA DESTINO</ControlLabel>
 				<FormControl componentClass="select" placeholder="select">
 					<option value="select">selecciona una</option>
 					<option value="other">C.CORRIENTE 120000124-1</option>
