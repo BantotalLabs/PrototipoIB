@@ -1,3 +1,4 @@
+//ACA SE DEFINEN "ATOMOS", SON COMPONENTES QUE NO TIENEN QUE VER CON NINGUNA FUNCIONALIDAD EN ESPECIAL, SE USAN EN TODAS
 import React from 'react'
 import { FormControl, ControlLabel } from 'react-bootstrap'
 
