@@ -1,23 +1,23 @@
-import React from 'react'
-import { render } from 'react-dom'
-import { Router, Route, hashHistory, IndexRoute } from 'react-router'
+import React, { Component } from 'react'
 
-import { Container } from './container'
-import { Login } from './login'
-import { Resume } from './resume'
-import { Transfer } from './transfer'
+import * as actionCreators from '../actions'
+import { connect } from 'react-redux'
 
-const Root = () =>
-	<Router history={ hashHistory }>
-		<Route path='/' component={ Login } />
-		<Route path='/home/' component={ Container }>
-			<IndexRoute component={ Resume } />
-			<Route path='/resume' component={ Resume } />
-			<Route path='/transfer' component={ Transfer } />
-		</Route>			
-	</Router>
+import { RouterApp } from './router'
 
-render((
-  <Root>
-  </Root>
-), document.getElementById("root"))
+class Root extends Component {
+	render() {
+		return (
+			<RouterApp { ...this.props } >		
+			</RouterApp>
+		)
+	}
+}
+
+const mapStateToProps = (state) => {
+	return {
+		userLoged: state.userLoged
+	}
+}
+
+export default connect(mapStateToProps, actionCreators)(Root)

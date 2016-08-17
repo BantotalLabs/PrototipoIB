@@ -4,9 +4,10 @@ import { hashHistory } from 'react-router'
 
 import { SimpleInput } from '../atoms'
 
-export const FormLogin = () => {
+export const FormLogin = ( { login } ) => {
 
 	const handleClick = (event) => {
+		login()
 		hashHistory.push('/home/')
 	}
 
